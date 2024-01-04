@@ -1,0 +1,109 @@
+{
+  "expo": {
+    "name": "YAKKA",
+    "slug": "yakka",
+    "version": "1.1",
+    "orientation": "portrait",
+    "owner": "ccfarhar",
+    "icon": "./assets/images/icon.png",
+    "scheme": "yakka",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/HomeImage.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 5000,
+      "url": "https://u.expo.dev/b4853d98-550c-47bd-8638-fb2c04182915"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.yakkaworld.yakka",
+      "buildNumber": "5",
+      "supportsTablet": false,
+      "config": {
+        "googleMapsApiKey": "AIzaSyAujNQfJtIYYxRWI51VPjsFaHOuypeTASE"
+      },
+      "infoPlist": {
+        "NSLocationAlwaysUsageDescription": "YAKKA requests access to your location to find local YAKKAs and to confirm your location when you host/join a YAKKA.",
+        "NSLocationWhenInUseUsageDescription": "YAKKA requests access to your location to find local YAKKAs and to confirm your location when you host/join a YAKKA.",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ]
+      }
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCqVXlI5ESitY_V0Bn1L3VkcsUcnc2Uu6Q"
+        }
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.yakkaworld.yakka",
+      "versionCode": 2,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "sentry-expo"
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#03C04A"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to verify you and display to other YAKKA users."
+        }
+      ],
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "184772987600328",
+          "clientToken": "e165f40d2a9557b797a17745b8336077",
+          "displayName": "Yakka",
+          "advertiserIDCollectionEnabled": false,
+          "autoLogAppEventsEnabled": false,
+          "isAutoInitEnabled": true
+        }
+      ],
+      [
+        "@react-native-voice/voice",
+        {
+          "speechRecognitionPermission": "Yakka requests access to speech recognition to allow you to use voice-to-text in search boxes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f7d3af0c-8baa-4e43-89ed-c778e61a652d"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "cli": {
+    "version": ">= 0.43.0"
+  },
+  "build": {
+    "production": {
+      "channel": "production",
+      "env": {
+        "APP_ENV": "production"
+      },
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "autoIncrement": true
+    },
+    "dev": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "distribution": "internal",
+      "channel": "dev-preview"
+    },
+    "dev-client": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "dev-preview"
+    },
+    "client-preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "env": {
+        "APP_ENV": "client-preview"
+      },
+      "channel": "preview",
+      "autoIncrement": true
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "enterpriseProvisioning": "universal",
+        "resourceClass": "m-medium"
+        
+      },
+      "autoIncrement": true
+    },
+    "simulator": {
+      "ios": {
+        "simulator": true,
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "channel": "dev-preview"
+    },
+    "simulator-dev-client": {
+      "ios": {
+        "simulator": true,
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "developmentClient": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6448456575"
+      }
+    },
+    "client-preview": {},
+    "dev-preview": {}
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "118421422583",
+    "project_id": "yakka-380814",
+    "storage_bucket": "yakka-380814.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118421422583:android:ccbfa3489118f6d9ca2ef2",
+        "android_client_info": {
+          "package_name": "com.yakkaworld.yakka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118421422583-86bpn0cak2avkva23re5hgr5jdnht28k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqVXlI5ESitY_V0Bn1L3VkcsUcnc2Uu6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118421422583-86bpn0cak2avkva23re5hgr5jdnht28k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "118421422583-gvaci8021b6imtbgokgpd9igoqc3roeh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yakkaworld.yakka"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
